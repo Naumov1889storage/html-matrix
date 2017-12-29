@@ -1,0 +1,104 @@
+mainColor = #ff0000
+
+.red {
+	color: mainColor
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: black
+}
+
+.container {
+	margin: 0 auto
+	padding: 0 16px 0 16px
+	max-width: 1160px
+}
+
+@media (max-width: 1165px) {
+	.container {
+		padding: 0 30px 0 30px
+	}
+}
+
+.section_title {
+	padding: 120px 0 72px 0
+	font-size: 25px
+	line-height: 25px
+}
+.section_item__title {
+	font-size: 16px
+	line-height: 16px
+}
+.section_item__text {
+	font-size: 14px
+	line-height: 24px
+}
+
+.btn {
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 235px
+	height:50px
+	font-size: 16px
+	color: #fff
+	transition: .1s
+	&_positive {
+		background-color: mainColor
+		&:hover {
+			background-color: #cd0a00
+		}
+	}
+	&_negative {
+		background-color: #252525
+		&:hover {
+			background-color: #5a5a5a
+		}
+	}
+}
+
+.cart_img {
+	width: 439px
+	height: 310px
+}
+
+
+.arrow {
+	position: relative
+	display: inline-block
+	width: 29px
+	height: 29px
+	background: transparent
+	border: 1px solid #000000
+	-webkit-border-radius: 100px
+	-moz-border-radius: 100px
+	border-radius: 100px
+	cursor: pointer
+	&::before {
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -6px
+		margin-left: -4px
+		width: 9px
+		height: 9px
+		border-bottom: 1px solid #000000
+		border-right: 1px solid #000000
+		transform: rotate(45deg)
+		transition: 0.3s
+	}
+}
+.accordion_title.active {
+	.arrow {
+		border-color: mainColor
+		&::before {
+			margin-top: -2px
+			margin-left: -4px
+			border-bottom: 1px solid mainColor
+			border-right: 1px solid mainColor
+			transform: rotate(-135deg)
+		}
+	}
+}

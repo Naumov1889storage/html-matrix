@@ -1,0 +1,204 @@
+@import "common"
+
+.footer {
+	margin-top: 87px
+	padding-bottom: 90px
+	border-top: 1px solid #9d9d9b
+	background: #555
+	font-family: MyrReg
+	color: #ffffff
+	a {
+		font-family: MyrReg
+		color: #ffffff
+	}
+	&_title {
+		position: relative
+		padding: 23px 0 13px 16px
+		font-family: MyrBoldCond
+		font-size: 30px
+		color: #ee1b22
+		text-shadow: 0 0 5px rgba(0,0,0,0.7);
+		&::before {
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 4px
+			background: url('../img/bg-footer-h-line.png') repeat-x left bottom
+		}
+	}
+	.footer_nav {
+		position: relative
+		width: 72%
+		&::before {
+			content: ""
+			position: absolute
+			top: 18px
+			right: -13px
+			width: 2px
+			height: 113%
+			background: url('../img/bg-footer-v-line.png')
+		}
+		.flex_row__between {
+			padding: 14px 0 0 18px
+		}
+		.footer_link__big {
+			display: block
+			font-family: MyrBoldCond
+			font-size: 18px
+			&:hover {
+				text-decoration: underline
+			}
+			&.service {
+				margin-top: 25px
+			}
+		}
+		.footer_link__little {
+			display: block
+			line-height: 14px
+			margin-top: 14px
+			font-size: 12px
+			color: #aba9a9
+			&:hover {
+				text-decoration: underline
+			}
+		}
+		.flex_column {
+			width: 22%
+		}
+	}
+	&_inf {
+		margin: 33px 0 0 63px
+	}
+	&_holding {
+		display: block
+		width: 221px
+		margin: 0 0 9px 0
+		font-size: 14px
+		text-decoration: underline
+		&:hover {
+			text-decoration: none
+		}
+	}
+	&_soc {
+		a {
+			display: block
+			width: 46px
+			height: 46px
+			background: url(../img/social-sprite.png)
+		}
+		a&__inst {
+			width: 42px
+			background-position: -46px 0
+		}
+		a&__utube {
+			width: 43px;
+			background-position: -88px 0;
+		}
+	}
+	a&_tel {
+		display: block;
+		height: 36px
+		margin: 0 0 5px -39px
+		padding: 0 0 0 39px
+		font-family: MyrBold
+		font-size: 24px
+		line-height: 36px
+		background: url('../img/phone.png') no-repeat left center
+	}
+	&_loc {
+		margin: 0 0 10px 0
+		font-size: 14px
+		line-height: 17px
+		color: #aea9a9
+	}
+	.footer_feedback {
+		display: block
+		margin-bottom: 30px
+		color: #aea9a9
+		&:hover {
+			text-decoration: underline
+		}
+	}
+	.footer_copyright {
+		font-size: 14px
+		color: #6b6a6a
+	}
+}
+
+@media (max-width: 1050px) {
+
+	.footer {
+		&_holding {
+			font-size: 13px
+			text-decoration: none
+		}
+		a&_tel {
+			font-family: MyrReg
+			font-size: 16px
+			background: none
+		}
+		&_title {
+			padding-left: 0
+			&::before {
+				content: none
+			}
+		}
+		.footer_nav {
+			&::before {
+				content: none
+			}
+			.flex_column {
+				margin-right: 30px
+				width: 25%
+			}
+			.flex_row__between {
+				padding-left: 0
+			}
+		}
+		&_inf {
+			margin: 33px 0 0 0
+		}
+	}
+
+
+}
+
+@media (max-width: 910px) {
+
+	.footer {
+		.flex_row__between.mob_column {
+			flex-direction: column
+		}
+		.footer_nav {
+			width: 100%
+		}
+	}
+
+}
+
+@media (max-width: 660px) {
+
+	.footer {
+		.footer_nav {
+			width: 100%
+			.flex_row__between {
+				flex-direction: column
+				.flex_column {
+					width: 100%
+				}
+			}
+			.footer_link__big {
+				margin-top: 30px
+				&.service {
+					margin-top: 30px;
+				}
+				&.mob-link {
+					margin-top: 0
+				}
+			}
+		}
+	}
+
+}
