@@ -1,0 +1,269 @@
+doctype html
+html(lang="ru-Ru")
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        title Супермаркет "Матрица" - карта "Копилка"
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600")
+        link(rel='stylesheet', href='css/concat-css-libs.min.css')
+        link(rel='stylesheet', href='css/concat-css.min.css')
+    body
+        .header-mob
+            .header-mob_line.flex_row__center.align_center
+                button(class="cmn-toggle-switch cmn-toggle-switch__htx" type="button")
+                    span
+                a(class='header_second__logo' href='http://matrixufa.ru/')
+                    img(class='' src='img/logo.jpg' alt='Супермаркет «Матрица»' title="Супермаркет «Матрица»")
+            .header-mob_nav
+                ul
+                    li
+                        a(class="" href='') Интернет-магазин
+                    li
+                        a(class="" href='') Новости
+                    li
+                        a(class="" href='') Акции
+                    li
+                        a(class="" href='') Вакансии
+                    li
+                        a(class="" href='') Контакты
+                    li
+                        a(class="" href='') О компании
+                    li
+                        a(class="" href='') Покупателям
+                    li
+                        a(class="" href='') Аренда
+                    li
+                        a(class="" href='') Поставщикам
+
+        .header-first#header-first
+            .container
+                .flex_row__between
+                    .header-first_left.flex_row__between
+                        .header-first_town
+                            span Ваш город:
+                            .ui.selection.dropdown
+                                input(name="town" type="hidden" value="default")
+                                i.dropdown.icon
+                                .text Уфа
+                                .menu
+                                    .item(class="item_current" data-value="Default")
+                                        a(class="current" href="") Уфа
+                                    .item(data-value="0")
+                                        a(href="http://matrix-m.ru/") Москва
+                                    .item(data-value="1")
+                                        a(href="") Самара
+                        a(class="header-first-to-map" href="http://matrixufa.ru/kontakty/map.php") Все магазины на карте города
+                    ul.header-first_nav.header-first__right.flex_row__between
+                        li
+                            a(class="" href='http://matrixufa.ru/about/') О компании
+                        li
+                            a(class="" href='http://matrixufa.ru/pokupatelyam/') Покупателям
+                        li
+                            a(class="" href='http://matrixufa.ru/arenda/') Аренда
+                        li
+                            a(class="" href='http://matrixufa.ru/postavshchikam/') Поставщикам
+        .header-second
+            .container.flex_row__between
+                a(class='header_second__logo' href='http://matrixufa.ru/')
+                    img(class='' src='img/logo.jpg' alt='Супермаркет «Матрица»' title="Супермаркет «Матрица»")
+                ul.header-second_nav.flex_row__between
+                    li
+                        a(class="" href='http://matrixufa.ru/catalog/') Интернет-магазин
+                    li
+                        a(class="" href='http://matrixufa.ru/news/') Новости
+                    li
+                        a(class="" href='http://matrixufa.ru/aktsii/') Акции
+                    li
+                        a(class="" href='http://matrixufa.ru/karera/') Вакансии
+                    li
+                        a(class="" href='http://matrixufa.ru/kontakty/') Контакты
+        .top
+            .container
+                .flex_column
+                    .flex_row__between
+                        button(class='btn btn_positive' type='button') Активировать карту
+                        button(class='btn btn_negative' type='button') Потеряли карту
+                    a(class='top-to-bottom arrow' href='')
+
+        .features#features
+            .container
+                h2.section_title Почему выбирают карту "Копилка"
+                .flex_row__between
+                    .features_item
+                    .features_item
+                        h3.section_item__title  «Копилка» - это выгодно
+                        p.section_item__text Регулярно используя карту «Копилка», Вы получаете возможность дешевле совершать многие повседневные покупки.
+                    .features_item
+                        h3.section_item__title «Копилка» - это удобно
+                        p.section_item__text С помощью одной карты Вы можете получать скидки в широкой сети супермаркетов, магазинов, кинокомплексов и автовокзалов.
+                    .features_item
+                        h3.section_item__title «Копилка» - это интересно
+                        p.section_item__text Участие в акциях партнёров Программы «Копилка» позволяет накапливать дополнительные баллы и выгоднее их использовать.
+
+
+        .rules
+            .container
+                h2.section_title Правила использования карты «Копилка»
+                .flex_row__between
+                    .rules_item
+                        b Предъяви карту на кассе при оплате товара или услуги
+                        p.section_item__text Предъяви карту на кассе при оплате товара или услуги
+                    .rules_item
+                        b Предъяви карту на кассе при оплате товара или услуги
+                        p.section_item__text Заполнение всех полей заявки при получении карты является обязательным.*
+                    .rules_item
+                        b Предъяви карту на кассе при оплате товара или услуги
+                        p.section_item__text Если в течение 12 месяцев с даты последней операции по карте она не использовалась, накопленные баллы аннулируются.
+                    .rules_item
+                        b Предъяви карту на кассе при оплате товара или услуги
+                        p.section_item__text ООО «Копилка», партнёры Программы «Копилка» по своему усмотрению вправе вносить любые изменения в правила Программы.**
+                    .rules_item
+                        b Предъяви карту на кассе при оплате товара или услуги
+                        p.section_item__text ООО «Копилка», партнёры Программы «Копилка» не несут ответственности за не санкционированное Вами использование карты «Копилка».
+                    .rules_item
+                        b Переносить баллы с одной карты на другую нельзя.
+                        p.section_item__text По правилам карты «Копилка» перенос балов с одной карты на другую невозможно.
+
+        .change-news
+            .container
+                .change
+                    h2.section_title Как обменять баллы на скидки
+                    .flex_row__between
+                        .change_item Если Вы приняли решение обменять Ваши баллы на скидки при расчёте за данную покупку – заранее сообщите об этом кассиру.
+                        .change_item Укажите точное количество баллов, которое Вы хотите обменять на скидку. Всё это необходимо для выбора соответствующего режима обслуживания Вашей карты.
+                        .change_item На кассе с Вашей карты будет списано то количество баллов, которое Вы обменяли на скидку для расчёта за покупку.
+                .news
+                    h2.section_title Новости компании
+                    .flex_row__between
+                        .news_item
+                            b.news_date 13.09.17
+                            .flex_row__between
+                                img(class='news_img' src='img/news.jpg' alt='')
+                                .news_inf
+                                    h3.section_item__title Недоступность сервисов
+                                    p.news_text В настоящее время регистрация в личном кабинете невозможна по техническим причинам.
+                                    p.news_text Телефон центра информационной поддержки Программы "Копилка" 8 800 2000 299 также может быть недоступен.
+                        .news_item
+                            b.news_date 13.09.17
+                            .flex_row__between
+                                img(class='news_img' src='img/news.jpg' alt='')
+                                .news_inf
+                                    h3.section_item__title Недоступность сервисов
+                                    p.news_text В настоящее время регистрация в личном кабинете невозможна по техническим причинам.
+                                    p.news_text Телефон центра информационной поддержки Программы "Копилка" 8 800 2000 299 также может быть недоступен.
+        .faq
+            .container
+                h2.section_title Часто задаваемые вопросы
+                .accordion
+                    .accordion_title
+                        .accordion_title__text Где и как можно получить карту «Копилка»?
+                            .accordion_title__arrow.arrow
+                    .accordion_content Подробный ответ размещён в разделе О ПРОГРАММЕ/КАК ПОЛУЧИТЬ КАРТУ.
+                .accordion
+                    .accordion_title
+                        .accordion_title__text Как узнать, сколько баллов уже есть на карте?
+                            .accordion_title__arrow.arrow
+                    .accordion_content
+                        .faq_list
+                            p.accordion_content__title Баланс по карте «Копилка» Вы можете узнать:
+                            ol
+                                li Зарегистрировавшись в личном кабинете на нашем сайте.
+                                li В  любой кассе, где обслуживается карта «Копилка» (вместе с чеком о покупке выдаётся специальный чек с указанием количества баллов, можно запросить баланс и без покупки).
+                                li По телефону центра информационной поддержки Программы 8 800 2000 299 (звонок бесплатный).
+                .accordion
+                    .accordion_title
+                        .accordion_title__text Какие компании входят в Программу «Копилка»?
+                            .accordion_title__arrow.arrow
+                    .accordion_content
+                        .faq_list
+                            p.accordion_content__title Баланс по карте «Копилка» Вы можете узнать:
+                            ol
+                                li Зарегистрировавшись в личном кабинете на нашем сайте.
+                                li В  любой кассе, где обслуживается карта «Копилка» (вместе с чеком о покупке выдаётся специальный чек с указанием количества баллов, можно запросить баланс и без покупки).
+                                li По телефону центра информационной поддержки Программы 8 800 2000 299 (звонок бесплатный).
+                .accordion
+                    .accordion_title
+                        .accordion_title__text Накопленная сумма покупок едина для всех партнёров?
+                            .accordion_title__arrow.arrow
+                    .accordion_content
+                        .faq_list
+                            p.accordion_content__title Баланс по карте «Копилка» Вы можете узнать:
+                            ol
+                                li Зарегистрировавшись в личном кабинете на нашем сайте.
+                                li В  любой кассе, где обслуживается карта «Копилка» (вместе с чеком о покупке выдаётся специальный чек с указанием количества баллов, можно запросить баланс и без покупки).
+                                li По телефону центра информационной поддержки Программы 8 800 2000 299 (звонок бесплатный).
+
+        .cashback
+            .container
+                .flex_row__start
+                    img(class='' src='img/piggy-cart.jpg' alt='')
+                    .flex_column
+                        h2.section_title <span class="red">Кеш бэк*</span> возврат на карту <span class="red">до 50%</span>
+                        p.section_text__bottom Для быстрой активации карты Вам необходимо ввести минимальное количество параметров. Для быстрой активации карты Вам необходимо ввести минимальное количество параметров.
+
+        .activate
+            .container
+                h2.section_title Активация новой карты, инструкция
+                .activate-block.flex_row__between
+                    p.activate_right__text.section_text__bottom Для быстрой активации карты Вам необходимо ввести минимальное количество параметров. Для быстрой активации карты Вам необходимо ввести минимальное количество параметров.
+                    .activate_steps-block.flex_row__between
+                        .activate_item.step1.flex_column
+                            span.activate_item__step.red Шаг 1
+                            p.section_text__bottom Введите номер Вашего мобильного
+                        .activate_item.step2.flex_column
+                            span.activate_item__step.red Шаг 2
+                            p.section_text__bottom  Введите номер карты «Копилка»
+
+        .bottom_inf
+            .container
+                h2.section_title Блок с информацией
+                p.section_text__bottom Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+
+        .footer
+            .container
+                .flex_row__between.mob_column
+                    .footer_nav
+                        h2.footer_title Карта сайта
+                        .flex_row__between
+                            .flex_column
+                                a(class="footer_link__big mob-link" href="http://matrixufa.ru/about/") О компании
+                                a(class="footer_link__little" href="http://matrixufa.ru/about/") История компании
+                            .flex_column
+                                a(class="footer_link__big" href="http://matrixufa.ru/pokupatelyam/") Покупателям
+                                a(class="footer_link__little" href="http://matrixufa.ru/diskontnye-karty/kopilka.php") Карта "Копилка"
+                                a(class="footer_link__little" href="http://matrixufa.ru/diskontnye-karty/diskontnaya-karta-matritsa.php") Дисконтная карта "Матрица"
+                                a(class="footer_link__little" href="http://matrixufa.ru/diskontnye-karty/soccard.php") "Социальная карта" Башкортостана
+                                a(class="footer_link__little" href="http://matrixufa.ru/diskontnye-karty/profsoyuznaya-diskontnaya-karta.php") Профсоюзная дисконтная карта
+                                a(class="footer_link__little" href="http://matrixufa.ru/gift_card/18/") Подарочные карты "Матрица"
+                            .flex_column
+                                a(class="footer_link__big" href="http://matrixufa.ru/partneram/") Партнерам
+                                a(class="footer_link__little" href="http://matrixufa.ru/kontakty/") Контакты
+                                a(class="footer_link__little" href="http://matrixufa.ru/news/") Новости
+                                a(class="footer_link__big service" href="http://matrixufa.ru/rabota/") Карьера
+                            .flex_column
+                                a(class="footer_link__big" href="http://matrixufa.ru/kontakty/") Контакты
+                                a(class="footer_link__little" href="http://matrixufa.ru/kontakty/otdel-po-upravleniyu-roznichnoy-setyu/") Отдел по управлению
+                                a(class="footer_link__little" href="http://matrixufa.ru/kontakty/otdel-reklamy-i-marketinga/") Отдел рекламы и маркетинга
+                                a(class="footer_link__little" href="http://matrixufa.ru/kontakty/otdel-po-upravleniyu-personalom/") Отдел по управлению персоналом
+                                a(class="footer_link__little" href="http://matrixufa.ru/kontakty/yuridicheskiy-otdel/") Юридический отдел
+                    .footer_inf.flex_column
+                        a(class='footer_holding' href='http://www.matrixholding.ru/') Сеть супермаркетов Матрица входит в ХолдингМатрица
+                        .footer_soc.flex_row__start
+                            a(class='footer_soc__vk' href='https://vk.com/matrixsuper')
+                            a(class='footer_soc__inst' href='https://www.instagram.com/matrixufasuper/')
+                            a(class='footer_soc__utube' href='https://www.youtube.com/channel/UCMl5wCSbKOcPwcIr9haZoRg')
+                        a(class='footer_tel' href='tel:+73472164109') +7 (347) 216-41-09
+                        p.footer_loc г.Уфа, 450078 <br> ул.С.Агиша 2/1
+                            a(class='footer_feedback' href='http://vk.com/topic-75368916_31766155') Обратная связь для покупателей
+
+                        p.footer_copyright © 2017. Все права защищены.
+        a(class='bottom-to-top' href='') Наверх
+        .popup_overlay
+        script(src='js/jquery-3.2.1.min.js')
+        script(src='js/concat-js-libs.min.js')
+        script(src='js/common.min.js')
+
+    
+
+
+
