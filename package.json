@@ -23,6 +23,6 @@
     "gulp-tinypng-nokey": "^1.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-uncss": "^1.0.6",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^3.0.1"
   }
 }
